@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import NavHeader from "./component/Header";
+import MainSection from "./component/MainSection";
+import { FooterTodo } from "./component/FooterTodo";
+// export let arr = [1,2,3]
 
-function App() {
+export default function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <React.Fragment   > { /*Fragment -  Element Node will not create */ }
+        <NavHeader/>
+        <MainSection/>
+        <FooterTodo/>
+    </React.Fragment>
   );
 }
-
-export default App;
