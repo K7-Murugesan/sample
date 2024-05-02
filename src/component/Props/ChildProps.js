@@ -20,5 +20,6 @@ export const ChildProps = ({data, arr, children}) => {  // ( props )
 
 ChildProps.defaultProps = {
   data : "Default Data",
-  arr : "Default Array"
+  arr : "Default Array",
+  children : "Default Children"
 }

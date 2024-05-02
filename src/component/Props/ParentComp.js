@@ -9,7 +9,7 @@ export const ParentComp = () => {
   return (
     <div>
         <ChildProps data = "Im from Parent"  >
-            Children From Function
+            
         </ChildProps>
         <ChildClassProps arr = {data} >
             <div style={ {width:"100px", backgroundColor:"papayawhip", color:"gray", boxShadow:"2px 2px 2px black" } }>
